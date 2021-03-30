@@ -4,10 +4,10 @@ Last update: 30.03.2021
 
 File links:
 
-[Uncommon REs](RE_list/re_list_uncommon.md)
+[Uncommon REs](re_list_uncommon.md)
 
-[Rare REs](RE_list/re_list_rare.md)
+[Rare REs](re_list_rare.md)
 
-[Epic REs](RE_list/re_list_epic.md)
+[Epic REs](re_list_epic.md)
 
-[Legendary REs](RE_list/re_list_legendary.md)
+[Legendary REs](re_list_legendary.md)
