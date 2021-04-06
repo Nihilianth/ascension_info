@@ -16,7 +16,6 @@ This includes spells triggered from:
 | RE | 81116 | Eldritch Knight | 81117 | 0 | 0 | 0 | Your successful melee hits generate mana. |
 | | 81117 | Eldritch Knight | 0 | 0 | 0 | 0 | Triggered by 81116 (Eldritch Knight) |
 | RE | 81119 | Overheating | 81120 | 0 | 0 | 0 | Your melee abilities inflict additional Fire damage and apply a stack of Overheating to your target. Overheating only applies from individual ability casts. |
-| | | | | | | | |
 | | | | | | | | Your Fire Mage spell cause Heat Stroke on targets inflicted with 3 stack of Overheating and reducing their movement speed by $81121s2%. |
 | | 81120 | Overheating | 0 | 0 | 0 | 0 | Triggered by 81119 (Overheating) |
 | RE | 81122 | Overloaded Froststorm | 81123 | 0 | 0 | 0 | You gain a stack of Overloaded when dealing direct Nature or Frost Damage. Upon reaching 20 stacks of Overloaded, you will trigger an Overloaded Froststorm on your target. This spell deals Froststorm damage over 8 seconds and increases your spell casting speed by 10% for 8 seconds. Froststorm damage is a combination of the Nature and Frost schools, and will benefit from the highest modifier to either school. |
@@ -30,6 +29,7 @@ This includes spells triggered from:
 | RE | 81151 | Bountiful Holy Wrath | 0 | 0 | 0 | 81487 | Your Holy Wrath is transformed into Holy Wrath (Bountiful Holy Wrath), allowing it to strike an extra time when hitting more than one target, dealing 20% damage of the original cast. |
 | | 81487 | Holy Wrath (Bountiful Holy Wrath) | 81492 | 965672 | 0 | 0 | Taught by 81151 (Bountiful Holy Wrath) |
 | | 81492 | Holy Wrath (Bountiful Holy Wrath) | 0 | 0 | 0 | 0 | Triggered by taught 81487 (Holy Wrath (Bountiful Holy Wrath)) |
+| | 965672 | Holy Wrath | 0 | 0 | 0 | 0 | Triggered by taught 81487 (Holy Wrath (Bountiful Holy Wrath)) |
 | RE | 81161 | Soulbender | 81162 | 0 | 0 | 0 | Drain Soul accumulates Soul Energy. You can consume stacks of Soul Energy with Shadowburn to heal nearby allies. |
 | | 81162 | Soul Energy | 0 | 0 | 0 | 0 | Triggered by 81161 (Soulbender) |
 | RE | 81166 | Sniper | 81167 | 0 | 0 | 0 | Standing still increases the range of your Aimed Shot by 1 yard every 3 seconds and increases the damage by 1% to a maximum of 10 stacks. |
@@ -69,12 +69,14 @@ This includes spells triggered from:
 | | 44401 | Missile Barrage | 0 | 0 | 0 | 0 | Triggered by 81265 (Arcane Infusion) |
 | RE | 81267 | Wingman | 81268 | 81269 | 0 | 0 | Challenging Shout applies an aura to you, increasing your damage taken by 10%, but reduces the damage nearby allies take by 10%. |
 | | 81268 | Wingman | 0 | 0 | 0 | 0 | Triggered by 81267 (Wingman) |
+| | 81269 | Wingman | 0 | 0 | 0 | 0 | Triggered by 81267 (Wingman) |
 | RE | 81273 | Arrows of Frost | 81274 | 0 | 0 | 0 | When you hit an enemy with a frost attack, you gain a stack of Frost Arrows. Frost Arrows make your ranged critical hits slow your target by 30% for 4 seconds. |
 | | 81274 | Arrows of Frost | 81275 | 0 | 0 | 0 | Triggered by 81273 (Arrows of Frost) |
 | RE | 81276 | Arrows of Fire | 81277 | 0 | 0 | 0 | When you hit an enemy with a Fire attack, you gain a stack of Fire Arrows. Fire Arrows make your ranged critical hits apply a damage over time effect to your target. This damage over time effect scales with your Spell Power. |
 | | 81277 | Arrows of Fire | 81278 | 0 | 0 | 0 | Triggered by 81276 (Arrows of Fire) |
 | RE | 81279 | Dark Arrow | 81309 | 9931034 | 0 | 0 | Ranged auto attacks have a 10% chance to summon a skeletal guardian if that target dies. |
 | | 81309 | Dark Arrow | 0 | 0 | 0 | 0 | Triggered by 81279 (Dark Arrow) |
+| | 9931034 | Dark Arrow | 81280 | 0 | 0 | 0 | Triggered by 81279 (Dark Arrow) |
 | RE | 81286 | Ice Age | 0 | 0 | 888122 | 0 | Your Frost Nova is now undispellable. In addition, when your Ice Block finishes it triggers a Frost Nova around you costing no mana and causing no cooldown. |
 | | 888122 | Ice Age | 0 | 0 | 0 | 0 | Triggered by 81286 (Ice Age) |
 | RE | 81287 | Mass Hysteria | 0 | 0 | 0 | 81288 | Your Fear Spell transforms into Fear (Mass Hysteria), becoming empowered with dark and terrifying energy, causing enemies near your feared target to become Shaken, reducing their stats by $81291s3% and movement speed by $81291s2%. |
@@ -182,8 +184,10 @@ This includes spells triggered from:
 | | 84454 | Flash of Adrenaline | 0 | 0 | 0 | 0 | Triggered by 84453 (Flash of Adrenaline) |
 | RE | 84455 | Death or Glory | 84456 | 0 | 84458 | 0 | Last stand dispels all harmful magic effects on you and grants you 10% increased melee attack power, melee attack speed and movement speed for 10 seconds. But your Last Stand buff lasts for half duration. |
 | | 84456 | Death or Glory | 0 | 0 | 0 | 0 | Triggered by 84455 (Death or Glory) |
+| | 84458 | Death or Glory (Dispel) | 0 | 0 | 0 | 0 | Triggered by 84455 (Death or Glory) |
 | RE | 84459 | Battle Fervor | 32216 | 84460 | 0 | 0 | Your Charge ability triggers Improved Victory Rush.Battle Shout increases attack speed and movement speed by 30% for 3 seconds while in Battle Stance. This effect cannot occur more than once every 10 seconds. |
 | | 32216 | Victorious | 0 | 0 | 0 | 0 | Triggered by 84459 (Battle Fervor) |
+| | 84460 | Battle Fervor (Battle Shout) | 84461 | 0 | 0 | 0 | Triggered by 84459 (Battle Fervor) |
 | RE | 84464 | Mortal Wounds | 84465 | 0 | 0 | 0 | Your Mortal strike now slows your target by 25% if the target is above 50% health. Lasts 4 seconds. Does not stack with other similar effects. |
 | | 84465 | Mortal Wounds | 0 | 0 | 0 | 0 | Triggered by 84464 (Mortal Wounds) |
 | RE | 84466 | Throw Weapon | 0 | 0 | 0 | 84467 | You learn Throw Weapon. Throw Weapon deals a significant amount of damage at a range and stuns your target for 2 seconds, but disarms you for 4 seconds. |
@@ -191,14 +195,21 @@ This includes spells triggered from:
 | | 84468 | Throw Weapon - Disarm | 0 | 0 | 0 | 0 | Triggered by taught 84467 (Throw Weapon) |
 | RE | 84472 | Blood Rain | 84473 | 884473 | 0 | 0 | Your Stormstrike now increases the damage dealt by your bleeds on the target by 15%. |
 | | 84473 | Blood Rain | 0 | 0 | 0 | 0 | Triggered by 84472 (Blood Rain) |
+| | 884473 | Blood Rain | 0 | 0 | 0 | 0 | Triggered by 84472 (Blood Rain) |
 | RE | 84506 | Unbounded Deathbringer | 84507 | 0 | 0 | 0 | Your damaging abilities have a chance to drain the life force of your target and his nearby allies, dealing additional Shadow damage and returning a portion of it to you. This effect scales with your Drain Life ability. |
 | | 84507 | Drain Life | 0 | 0 | 0 | 0 | Triggered by 84506 (Unbounded Deathbringer) |
 | RE | 84508 | Purification By Light | 84509 | 0 | 0 | 0 | Your damaging abilities have a chance to Exorcise your target, and cause him to cast a Consecration-like effect on his location. These effects scale with your Exorcism and Consecration abilities. |
 | | 84509 | Exorcism | 0 | 84759 | 900879 | 0 | Triggered by 84508 (Purification By Light) |
+| | 84759 | Consecration | 0 | 0 | 0 | 0 | Triggered by 84509 (Exorcism) |
+| | 900879 | Exorcism | 0 | 0 | 0 | 0 | Triggered by 84509 (Exorcism) |
 | RE | 84510 | Unbounded Spell Slinger | 84511 | 84747 | 0 | 0 | Your damaging abilities have a chance to strike your opponent and his nearby allies with arcane magic, dealing additional Arcane damage and triggering the Lesser Clearcasting effect. |
 | | 84511 | Arcane Burst | 0 | 0 | 0 | 0 | Triggered by 84510 (Unbounded Spell Slinger) |
+| | 84747 | Spell Slinger Clearcast Delay | 965518 | 965509 | 84748 | 0 | Triggered by 84510 (Unbounded Spell Slinger) |
+| | 84748 | Lesser Clearcasting | 0 | 0 | 0 | 0 | Triggered by 84747 (Spell Slinger Clearcast Delay) |
 | RE | 84512 | Amal'thazad's Curse | 84513 | 0 | 0 | 0 | Your damaging abilities have a chance to afflict your target with Amal'thazad's Curse. Amal'thazad's Curse chilling all nearby units (including yourself), and reduces their movement speed by 5%, stacking 5 times. |
 | | 84513 | Amal'thazad's Curse | 0 | 84514 | 0 | 0 | Triggered by 84512 (Amal'thazad's Curse) |
+| | 84514 | Amal'thazad's Curse | 0 | 0 | 84760 | 0 | Triggered by 84513 (Amal'thazad's Curse) |
+| | 84760 | Amal'Thazad's Curse | 0 | 0 | 0 | 0 | Triggered by 84514 (Amal'thazad's Curse) |
 | RE | 84515 | Seething Flames | 84516 | 0 | 0 | 0 | Your damaging abilities have a chance to ignite enemies, dealing Fire damage to your target and his nearby allies over time. This effect scales with your Explosive Shot ability. |
 | | 84516 | Seething Flames | 0 | 0 | 0 | 0 | Triggered by 84515 (Seething Flames) |
 | RE | 84527 | Zany Zealot | 0 | 84528 | 0 | 0 | Your offensive Priest spell casts have a chance to cast an additional random Priest spell for free. |
@@ -391,6 +402,7 @@ This includes spells triggered from:
 | | 414030 | Fire Fire Fireball | 414031 | 0 | 0 | 0 | Triggered by 414029 (Fire Fire Fireball) |
 | RE | 414032 | Stay Frosty | 414033 | 0 | 414051 | 0 | Grants an extra charge to your Fingers of Frost. In addition, every direct damage Mage spell you cast will increase its proc chance by 2% until it triggers. |
 | | 414033 | Stay Frosty | 0 | 0 | 0 | 0 | Triggered by 414032 (Stay Frosty) |
+| | 414051 | Stay Frosty | 0 | 0 | 0 | 0 | Triggered by 414032 (Stay Frosty) |
 | RE | 911103 | Impact | 64343 | 0 | 0 | 0 | Gives your damaging spells a 3% chance to cause the next Fire Blast you cast to stun the target for 2 seconds. |
 | | 64343 | Impact | 12355 | 0 | 0 | 0 | Triggered by 911103 (Impact) |
 | RE | 911127 | Transcendental Embrace | 411128 | 0 | 0 | 0 | Your critical heals from Lesser Healing Wave reduce the cast time of your Chain Heal by 15% and allow the spell to jump to an extra target. This effect can be stored up to 3 times. |
@@ -409,6 +421,7 @@ This includes spells triggered from:
 | | 35358 | Intensity | 0 | 0 | 0 | 0 | Triggered by 917106 (Intensity) |
 | RE | 920234 | Improved Lay on Hands | 20233 | 20233 | 0 | 0 | Reduces the cooldown of Lay on Hands by 1 minute. |
 | | 20233 | Lay on Hands | 0 | 0 | 0 | 0 | Triggered by 920234 (Improved Lay on Hands) |
+| | 20233 | Lay on Hands | 0 | 0 | 0 | 0 | Triggered by 920234 (Improved Lay on Hands) |
 | RE | 920500 | Improved Berserker Rage | 23691 | 0 | 0 | 0 | The Berserker Rage ability will generate 20 rage when used. |
 | | 23691 | Berserker Rage Effect | 0 | 0 | 0 | 0 | Triggered by 920500 (Improved Berserker Rage) |
 | RE | 926174 | Expunge | 965958 | 0 | 0 | 0 | Your Chimera Shots have a 100% chance to leave a lingering poisons on the target dealing Nature damage every 3 sec for 15 sec and stacking up to 3 times. Upon reaching 3 stacks the poison is expunged from the target, dealing Nature damage (half to players) to the target and enemies within 10 yards. |
@@ -419,25 +432,34 @@ This includes spells triggered from:
 | | 51637 | Focused Attacks | 0 | 0 | 0 | 0 | Triggered by 951634 (Focused Attacks) |
 | RE | 952120 | Fire Walk With Me | 139 | 956446 | 0 | 0 | Your Flamestrike now increases the movement speed of allies who walk through it by 50%. |
 | | 139 | Renew | 0 | 0 | 0 | 0 | Triggered by 952120 (Fire Walk With Me) |
+| | 956446 | Paratrooper Disengage | 0 | 0 | 0 | 0 | Triggered by 952120 (Fire Walk With Me) |
 | RE | 953228 | Rapid Recuperation | 853230 | 0 | 0 | 0 | You gain 2% of your base mana every 3 sec while under the effect of Rapid Fire, and you gain 1% of your base mana every 2 sec when you gain Rapid Killing. This enchant does not stack. |
 | | 853230 | Rapid Recuperation Effect | 864180 | 0 | 0 | 0 | Triggered by 953228 (Rapid Recuperation) |
 | RE | 953308 | Evoker | 953309 | 0 | 953313 | 0 | Casting Arcane Missiles while Missile Barrage is active increases the chance to proc your next Brain Freeze by 50%. Casting Fireball while Brain Freeze is active increases the chance to proc your next Missile Barrage by 50%. Consuming these effects grant you a stack of Evoker which decreases the cast time of Frostbolt by 3%, increases the damage by 3% and critical strike chance by 2% of Fireball and Arcane Missiles. This effect stacks to 5 times. |
 | | 953309 | Arcane Evoked | 0 | 0 | 0 | 0 | Triggered by 953308 (Evoker) |
+| | 953313 | Evoker | 0 | 0 | 0 | 0 | Triggered by 953308 (Evoker) |
 | RE | 954010 | Dancing Flames | 954011 | 0 | 0 | 0 | Using Fire Ward grants you Dancing Flames which reduces the cast time of Flamestrike by 100% and its mana cost by 50%. Lasts 10 sec. |
 | | 954011 | Dancing Flames | 0 | 0 | 0 | 0 | Triggered by 954010 (Dancing Flames) |
 | RE | 954035 | Lightning Discharge | 954036 | 0 | 0 | 0 | While casting Lightning Bolt and Chain Lightning your Lightning Shield is supercharged, increasing its damage by 50% and making it discharge pure energy, stunning nearby enemies when triggered. |
 | | 954036 | Supercharged | 0 | 954037 | 0 | 0 | Triggered by 954035 (Lightning Discharge) |
+| | 954037 | Lightning Discharge | 0 | 0 | 0 | 0 | Triggered by 954036 (Supercharged) |
 | RE | 954038 | Natural Synergy | 954039 | 0 | 0 | 0 | Your Shaman direct healing spells increase the critical effect chance of your next Regrowth by 5%, stacking up to 10 times. The periodic heal of your Regrowth can now critically hit on the target of your Earth Shield. |
 | | 954039 | Natural Synergy | 0 | 0 | 0 | 0 | Triggered by 954038 (Natural Synergy) |
 | RE | 954044 | Locust Ranger | 0 | 954054 | 0 | 0 | Teaches you Locust Shot if you know Steady Shot. Locust Shot deals Nature damage based on your ranged weapon damage, scales with Steady Shot modifiers and is increased by your spell damage. This ability is castable while moving. When it deals non-critical damage it triggers Wild Quiver (requires rank 3 of the Wild Quiver talent). When it deals critical damage, it reduces the cooldown of your Chimera Shot by 2 seconds. |
+| RE | 954044 | Locust Ranger | 0 | 0 | 0 | 954052 | Teaches you Locust Shot if you know Steady Shot. Locust Shot deals Nature damage based on your ranged weapon damage, scales with Steady Shot modifiers and is increased by your spell damage. This ability is castable while moving. When it deals non-critical damage it triggers Wild Quiver (requires rank 3 of the Wild Quiver talent). When it deals critical damage, it reduces the cooldown of your Chimera Shot by 2 seconds. |
 | | 954054 | Locust Shot Chimera Shot cdr | 0 | 0 | 0 | 0 | Triggered by 954044 (Locust Ranger) |
 | | 954052 | Locust Shot | 0 | 0 | 0 | 0 | Taught by 954044 (Locust Ranger) |
 | RE | 954050 | Graceful Prayer | 47930 | 0 | 954051 | 0 | Your Prayer of Healing triggers the Grace effect and has a 20% increased chance to critically heal but has an 8 second cooldown. |
 | | 47930 | Grace | 0 | 0 | 0 | 0 | Triggered by 954050 (Graceful Prayer) |
+| | 954051 | Heavy Prayer | 0 | 0 | 0 | 0 | Triggered by 954050 (Graceful Prayer) |
 | RE | 954067 | Titanic Mutilate | 0 | 2687 | 0 | 0 | While Titan's Grip is active you learn Mutilate (Titan), an attack with both weapons dealing 60% weapon damage, increased by 20% if your target is bleeding. Also, your Bloodthirst deals 5% more damage per active combo point and dealing damage with Whirlwind triggers Bloodrage (if known). |
+| RE | 954067 | Titanic Mutilate | 0 | 0 | 0 | 954064 | While Titan's Grip is active you learn Mutilate (Titan), an attack with both weapons dealing 60% weapon damage, increased by 20% if your target is bleeding. Also, your Bloodthirst deals 5% more damage per active combo point and dealing damage with Whirlwind triggers Bloodrage (if known). |
 | | 2687 | Bloodrage | 0 | 29131 | 954009 | 0 | Triggered by 954067 (Titanic Mutilate) |
+| | 954009 | Intervene RE self buff | 0 | 0 | 954007 | 0 | Triggered by 2687 (Bloodrage) |
 | | 954064 | Mutilate (Titan) | 0 | 954065 | 954066 | 0 | Taught by 954067 (Titanic Mutilate) |
+| | 1 | Word of Glader (OLD) Test | 0 | 0 | 0 | 0 | Taught by 954067 (Titanic Mutilate) |
 | | 954065 | Mutilate (Titan) | 0 | 0 | 0 | 0 | Triggered by taught 954064 (Mutilate (Titan)) |
+| | 954066 | Mutilate (Titan) | 0 | 0 | 0 | 0 | Triggered by taught 954064 (Mutilate (Titan)) |
 | RE | 954347 | Demonic Synergy | 965655 | 0 | 0 | 0 | When you critically strike with a direct damage spell, the critical strike chance of your pet's next spell is increased by 25%. |
 | | 965655 | Demonic Synergy | 0 | 0 | 0 | 0 | Triggered by 954347 (Demonic Synergy) |
 | RE | 956445 | Paratrooper | 0 | 956446 | 0 | 0 | Your Disengage now launches you higher into the air and activates a Combat Parachute. While airborne, the high vantage point increases the critical strike chance of your Hunter shots by 25%. When the parachute is detached you gain 80% ranged attack speed for 6 seconds. |
@@ -465,9 +487,11 @@ This includes spells triggered from:
 | RE | 965240 | Elemental Boon | 965239 | 0 | 0 | 0 | Your Lightning Bolt and Chain Lightning spells have a chance to grant your party 3% spell haste for 8 seconds. |
 | | 965239 | Elemental Boon | 0 | 0 | 0 | 0 | Triggered by 965240 (Elemental Boon) |
 | RE | 965245 | Time Warp | 0 | 965246 | 0 | 0 | After casting Blink your spell damage, spell haste, and spell critical strike chance is increased by 5% for 6 seconds. You will also learn to create a Time Warp, allowing you to return to your original Blink position if cast within 4 seconds. |
+| RE | 965245 | Time Warp | 0 | 0 | 0 | 848020 | After casting Blink your spell damage, spell haste, and spell critical strike chance is increased by 5% for 6 seconds. You will also learn to create a Time Warp, allowing you to return to your original Blink position if cast within 4 seconds. |
 | | 965246 | Time Distortion | 0 | 0 | 0 | 0 | Triggered by 965245 (Time Warp) |
 | | 848020 | Time Warp | 0 | 848018 | 0 | 0 | Taught by 965245 (Time Warp) |
 | | 848018 | Time Warp | 0 | 0 | 862388 | 0 | Triggered by taught 848020 (Time Warp) |
+| | 862388 | Time Warp Range Check | 0 | 0 | 0 | 0 | Triggered by taught 848018 (Time Warp) |
 | RE | 965261 | Lava Rush | 965260 | 0 | 0 | 0 | Your Lava Lash ability has a 25% chance to grant your party 5% melee haste for 10 seconds. |
 | | 965260 | Lava Rush | 0 | 0 | 0 | 0 | Triggered by 965261 (Lava Rush) |
 | RE | 965274 | Blaze Ward | 0 | 0 | 965272 | 0 | Taking direct damage has a chance to activate Blaze Aura, which deals Fire damage each second for 5 seconds. |
@@ -476,6 +500,8 @@ This includes spells triggered from:
 | | 965281 | Blooming Growth | 0 | 0 | 0 | 0 | Triggered by 965280 (Blooming Growth) |
 | RE | 965283 | Nature's Fervor | 0 | 965284 | 965284 | 0 | When you fully apply Lacerate to a target, your next Feral ability becomes empowered:Mangle (Bear): Reduces the target's armor by 20% for 8 seconds.Faerie Fire (Feral): Reduces your physical damage taken by 8% for 8 seconds.Lacerate: Next application deals 75% increased direct damage and 50% increased threat. |
 | | 965284 | Nature's Fervor | 0 | 0 | 10060 | 0 | Triggered by 965283 (Nature's Fervor) |
+| | 965284 | Nature's Fervor | 0 | 0 | 10060 | 0 | Triggered by 965283 (Nature's Fervor) |
+| | 10060 | Power Infusion | 0 | 0 | 0 | 0 | Triggered by 965284 (Nature's Fervor) |
 | RE | 965285 | Primal Frenzy | 0 | 965286 | 0 | 0 | Your Rip and Rake damage over time effects have a chance to enrage you, reducing the energy cost of your abilities and increases your Physical damage done. |
 | | 965286 | Primal Frenzy | 0 | 0 | 0 | 0 | Triggered by 965285 (Primal Frenzy) |
 | RE | 965288 | Unrelenting Wrath | 0 | 965289 | 0 | 0 | Your Hunter ability critical strikes have a chance to cause your pet to enrage, increasing its damage by 30% for 5 seconds. Also increases the duration of your Bestial Wrath and The Beast Within by 2 seconds. |
@@ -490,6 +516,7 @@ This includes spells triggered from:
 | | 30455 | Ice Lance | 0 | 0 | 0 | 0 | Triggered by 965294 (Ice Barrage) |
 | RE | 965295 | Consecrated Strikes | 0 | 965321 | 0 | 0 | Your Crusader Strike, Divine Storm and Hammer of the Righteous abilities have a chance to consecrate the ground beneath your feet. Consecrated Ground deals Holy damage every second to your enemies, increases the Strength of your allies by 5% and increases your Strength by 10% and your spell damage by 30% of your Strength.Consecrated Ground will also imbue your weapon with pure light, giving your melee abilities a chance to deal additional physical damage. This damage can trigger your Seal of Command. Does not stack with other temporary weapon enchants. |
 | | 965321 | Consecrated Ground | 0 | 977849 | 977847 | 0 | Triggered by 965295 (Consecrated Strikes) |
+| | 977847 | Consecrated Ground | 0 | 0 | 0 | 0 | Triggered by 965321 (Consecrated Ground) |
 | RE | 965297 | Holy Servitude | 0 | 965298 | 0 | 0 | Your Greater Heal ability now also applies a heal over time effect to the target for 12 seconds. This effect stacks 3 times. The mana cost of Greater Heal is also reduced by 10%. |
 | | 965298 | Holy Servitude | 0 | 0 | 0 | 0 | Triggered by 965297 (Holy Servitude) |
 | RE | 965299 | Shadow Visions | 0 | 965899 | 0 | 0 | Dealing damage with Mind Flay grants you a Soul Fragment. Soul Fragments grant you 1% increased casting speed for 12 sec, stacking up to 9 times. Upon reaching 9 stacks you gain Shadow Visions for the next 8 sec. Shadow Visions empowers your next ability: Shadow Word: Pain - Afflicts up to 3 additional nearby enemies. Costs no mana. Mind Blast - Causes the target to take 5% more Shadow damage from you for 10 seconds. Devouring Plague - Reduces the periodic interval by 33%. |
@@ -502,6 +529,7 @@ This includes spells triggered from:
 | | 965306 | Booming Thunder | 0 | 0 | 0 | 0 | Triggered by 965305 (Booming Thunder) |
 | RE | 965307 | Molten Earth | 965308 | 0 | 0 | 0 | Your Lava Lashes increase your bonus spell damage by 10% of your attack power and leave a patch of fire on the ground which deals fire damage to all enemies within. |
 | | 965308 | Molten Earth | 0 | 0 | 411163 | 0 | Triggered by 965307 (Molten Earth) |
+| | 411163 | Molten Earth | 0 | 0 | 0 | 0 | Triggered by 965308 (Molten Earth) |
 | RE | 965309 | Mending Tide | 965310 | 0 | 0 | 0 | Your Riptides create a healing effect at the feet of the target ally. All allies standing within will be healed each second for 6 seconds, and Chain Heals cast on these targets will be 15% more powerful. |
 | | 965310 | Mending Tide | 0 | 0 | 0 | 0 | Triggered by 965309 (Mending Tide) |
 | RE | 965311 | Endless Agony | 0 | 965312 | 0 | 0 | Each time your Curse of Agony ability deals damage it increases the damage the target takes from your Curse of Agony ability by 3%. Stacks 50 times. |
@@ -522,12 +550,18 @@ This includes spells triggered from:
 | | 965333 | In For the Kill | 0 | 0 | 0 | 0 | Triggered by 965332 (In For the Kill) |
 | RE | 965334 | Assuaging Shadows | 832712 | 832713 | 832714 | 0 | Shadow Dance now triggers a Shadow Nova which slows all targets within 8 yards by 80% for 3 sec and applies 1 Shadow Mark (3 to creatures) to them for 8 sec. When you Ambush a marked target your Shadowstep cooldown is refreshed, a Shadow Mark stack is removed, and you gain Shadow's Embrace. Shadow's Embrace increases all damage you deal by 4%, stacking up to 3 times, and lasts 15 seconds. |
 | | 832712 | Shadow Nova | 832713 | 0 | 832714 | 0 | Triggered by 965334 (Assuaging Shadows) |
+| | 832713 | Shadow Mark | 0 | 0 | 832714 | 0 | Triggered by 965334 (Assuaging Shadows) |
+| | 832714 | Assuaging Shadows | 0 | 0 | 0 | 0 | Triggered by 965334 (Assuaging Shadows) |
+| | 832714 | Assuaging Shadows | 0 | 0 | 0 | 0 | Triggered by 832712 (Shadow Nova) |
+| | 832714 | Assuaging Shadows | 0 | 0 | 0 | 0 | Triggered by 832713 (Shadow Mark) |
 | RE | 965337 | Warcry | 0 | 965338 | 411147 | 0 | Your Battle Shout also increases your melee and ranged critical strike chance by 100% for 4 seconds. This effect has a 2 minute cooldown. |
 | | 965338 | Warcry | 0 | 0 | 0 | 0 | Triggered by 965337 (Warcry) |
+| | 411147 | Vocal Fatigue | 0 | 0 | 0 | 0 | Triggered by 965337 (Warcry) |
 | RE | 965346 | Darting Shadows | 0 | 965347 | 0 | 0 | Increases your movement speed by 50% for 4 seconds after using Vanish. |
 | | 965347 | Darting Shadows | 0 | 0 | 0 | 0 | Triggered by 965346 (Darting Shadows) |
 | RE | 965368 | Savage Defense | 0 | 965284 | 0 | 0 | Increases the attack power scaling of your Savage Defense ability by 3% of your attack power. |
 | | 965284 | Nature's Fervor | 0 | 0 | 10060 | 0 | Triggered by 965368 (Savage Defense) |
+| | 10060 | Power Infusion | 0 | 0 | 0 | 0 | Triggered by 965284 (Nature's Fervor) |
 | RE | 965389 | Blood Drinker | 987654 | 0 | 0 | 0 | Your Bloodthirst now consumes Taste for Blood to heal you for a small amount, increased by your attack power. |
 | | 987654 | Bloodthirsty | 0 | 0 | 0 | 0 | Triggered by 965389 (Blood Drinker) |
 | RE | 965401 | Fired Up | 965402 | 0 | 0 | 0 | Dealing direct damage with a Fire spell or ability has a 12% chance to guarantee your next Fire spell or ability to critically strike. |
@@ -538,6 +572,7 @@ This includes spells triggered from:
 | | 965418 | Copious Power | 0 | 0 | 0 | 0 | Triggered by 965417 (Copious Power) |
 | RE | 965421 | Divine Purpose | 965423 | 965298 | 0 | 0 | When you heal with Penance, the damage of your next Penance spell is increased by 50%, and when you deal damage with Penance, the healing of your next Penance spell is increased by 75%. |
 | | 965423 | Divine Purpose | 0 | 0 | 0 | 0 | Triggered by 965421 (Divine Purpose) |
+| | 965298 | Holy Servitude | 0 | 0 | 0 | 0 | Triggered by 965421 (Divine Purpose) |
 | RE | 965442 | Wacky Wizardry | 0 | 965443 | 0 | 0 | Your offensive Mage spell casts have a chance to cast an additional random Mage spell for free. |
 | | 965443 | Wacky Wizardry | 0 | 0 | 0 | 0 | Triggered by 965442 (Wacky Wizardry) |
 | RE | 965445 | Whispers of the Old Gods | 0 | 965446 | 0 | 0 | Damage from your Shadow Word: Pain spell has a chance to summon a Tentacle of the Old Gods. |
@@ -546,22 +581,30 @@ This includes spells triggered from:
 | | 965477 | Blessing of the Divines | 0 | 0 | 0 | 0 | Triggered by 965476 (Blessing of the Divines) |
 | RE | 965488 | Spirit Dash | 965489 | 966109 | 0 | 0 | Casting Ghost Wolf removes all immobilizing effects and increases your movement speed by 55% for 3 seconds. This effect has a 20 second cooldown. |
 | | 965489 | Spirit Dash | 975493 | 0 | 0 | 0 | Triggered by 965488 (Spirit Dash) |
+| | 966109 | RE Cooldown Spirit Dash | 0 | 0 | 0 | 0 | Triggered by 965488 (Spirit Dash) |
 | RE | 965494 | Eradication | 0 | 965312 | 0 | 0 | Increases the haste granted by your Eradication talent by 2%. |
 | | 965312 | Endless Agony | 0 | 0 | 0 | 0 | Triggered by 965494 (Eradication) |
 | RE | 965499 | Infused Gems | 0 | 965498 | 0 | 0 | Your Mana Gem now also grants you 10% spell haste for 8 seconds. |
 | | 965498 | Crystal's Alacrity | 0 | 0 | 0 | 0 | Triggered by 965499 (Infused Gems) |
 | RE | 965500 | Stormbringer | 0 | 965506 | 965515 | 0 | Your damaging abilities have a chance to strike your opponent with lightning, dealing additional Nature damage and slowing them for 4 seconds. |
 | | 965506 | Lightning Blast | 0 | 965654 | 0 | 0 | Triggered by 965500 (Stormbringer) |
+| | 965515 | RE Cooldown Stormbringer | 0 | 0 | 0 | 0 | Triggered by 965500 (Stormbringer) |
 | RE | 965501 | Deathbringer | 0 | 965507 | 965516 | 0 | Your damaging abilities have a chance to drain the life force of your target, dealing a significant amount of additional Shadow damage and returning a portion of it to you. This powerful effect scales with your Drain Life ability. This powerful effect cannot occur more than once every 4.5 seconds. |
 | | 965507 | Drain Life | 0 | 0 | 0 | 0 | Triggered by 965501 (Deathbringer) |
+| | 965516 | RE Cooldown Deathbringer | 0 | 0 | 0 | 0 | Triggered by 965501 (Deathbringer) |
 | RE | 965502 | Righteous Zealot | 0 | 965508 | 965517 | 0 | Your damaging abilities have a chance to Smite your target, dealing a significant amount of additional Holy damage and healing nearby party members for a small amount. This powerful effect scales with your Smite ability. Damage reduced by 80% against players. This powerful effect cannot occur more than once every 4.5 seconds. |
 | | 965508 | Righteous Smite | 0 | 0 | 0 | 0 | Triggered by 965502 (Righteous Zealot) |
+| | 965517 | RE Cooldown Righteous Zealot | 0 | 0 | 0 | 0 | Triggered by 965502 (Righteous Zealot) |
 | RE | 965503 | Spell Slinger | 965518 | 965509 | 975503 | 0 | Your damaging abilities have a chance to strike your opponent with arcane magic, dealing a significant amount of additional Arcane damage and triggering the Clearcasting effect. This powerful effect cannot occur more than once every 10 seconds. |
 | | 965518 | RE Cooldown Spell Slinger | 0 | 0 | 0 | 0 | Triggered by 965503 (Spell Slinger) |
+| | 965509 | Arcane Burst | 0 | 0 | 0 | 0 | Triggered by 965503 (Spell Slinger) |
+| | 975503 | Spell Slinger Clearcast Delay | 965518 | 965509 | 12536 | 0 | Triggered by 965503 (Spell Slinger) |
 | RE | 965504 | Frost Lich | 0 | 965510 | 965519 | 0 | Your damaging abilities have a chance to chill your target, dealing Frost damage and slowing the target by 70% for 2 seconds. This effect cannot occur more than once every 9 seconds. |
 | | 965510 | Bone Chill | 0 | 965706 | 0 | 0 | Triggered by 965504 (Frost Lich) |
+| | 965519 | RE Cooldown Frost Lich | 0 | 0 | 0 | 0 | Triggered by 965504 (Frost Lich) |
 | RE | 965505 | Harbinger of Flame | 0 | 965511 | 965520 | 0 | Your damaging abilities have a chance to ignite enemies, dealing a significant amount of Fire damage to your target and enemies within 10 yards and setting them ablaze, dealing a significant amount of additional Fire damage over 4 seconds. This powerful effect cannot occur more than once every 5 seconds. |
 | | 965511 | Flame Burst | 0 | 0 | 0 | 0 | Triggered by 965505 (Harbinger of Flame) |
+| | 965520 | RE Cooldown Harbinger of Flame | 0 | 0 | 0 | 0 | Triggered by 965505 (Harbinger of Flame) |
 | RE | 965858 | Holy Ascension | 965859 | 0 | 0 | 0 | Reduces the cooldown of your Holy Fire by 2 seconds. After casting Holy Fire your next spell is empowered:Smite: Deals 50% (20% to players) additional damage.Exorcism: Increases all Holy damage you deal to the target by 5% for 10 seconds.Holy Shock: Guaranteed to critically strike. |
 | | 965859 | Holy Ascension | 0 | 0 | 0 | 0 | Triggered by 965858 (Holy Ascension) |
 | RE | 965862 | Blademaster | 965863 | 0 | 0 | 0 | When you parry you gain 3% armor for 20 sec, stacking 5 times. At 5 stacks you empower the next ability you use, consuming the stacks and granting it an additional effect:Devastate: Deals 50% additional damage and reduces the target's armor by an additional 10% for 10 seconds.Riposte: Increases your chance to parry by 10% for 10 seconds.Shield Slam: Increases your block value by 15% for 15 seconds. |
@@ -580,30 +623,41 @@ This includes spells triggered from:
 | | 966107 | Elune's Blessing | 0 | 0 | 0 | 0 | Triggered by 966126 (Wrecking Crew) |
 | RE | 977700 | Heavyweight | 977701 | 977706 | 0 | 0 | Dealing weapon damage with any Warrior attack reduces your attack speed by 5% but increases your physical damage by 2%, stacking up to 5 times. Normal auto attacks reset this effect.If you reach five stacks, your next auto attack will crush targets in front of you, dealing 125% unnormalized weapon damage. This damage is tripled and always crits against non-players, but can't crit against players. |
 | | 977701 | Heavyweight | 0 | 0 | 0 | 0 | Triggered by 977700 (Heavyweight) |
+| | 977706 | Ready to Strike | 977703 | 0 | 0 | 0 | Triggered by 977700 (Heavyweight) |
 | RE | 977712 | Avatar of Lightning | 978707 | 0 | 0 | 0 | Your Elemental Mastery now frees you from the physical plane, lifting you into the air and allowing you to move while casting Lightning Bolt and Chain Lightning. The cooldown of your Elemental Mastery is also halved, but it no longer gives you an instant cast. |
 | | 978707 | Avatar of Lightning | 977760 | 74396 | 62642 | 0 | Triggered by 977712 (Avatar of Lightning) |
+| | 74396 | Fingers of Frost | 0 | 0 | 0 | 0 | Triggered by 978707 (Avatar of Lightning) |
+| | 62642 | Random Lightning Visual Arc Up Effect | 0 | 0 | 0 | 0 | Triggered by 978707 (Avatar of Lightning) |
 | RE | 977713 | Pure Shadow | 977715 | 0 | 0 | 0 | Your Shadow Bolt casts draw power from your enemies, increasing the critical strike chance of your Shadow spells by 1%, stacking up to 10 times. When fully stacked, your Shadowfury will send pure Shadow crashing down at the target area, dealing massive Shadow damage spread between affected enemies. |
 | | 977715 | Pure Shadow | 0 | 0 | 0 | 0 | Triggered by 977713 (Pure Shadow) |
 | RE | 977717 | Primordial Fury | 977718 | 0 | 0 | 0 | During Shamanistic Rage your Shaman non-periodic spell and ability criticals consume 50 rage to deal extra Elemental damage and empower you with Primordial Fury, increasing your spell damage by 30% of your Agility for 15 seconds.Elemental damage is a combination of the Nature, Fire and Frost schools, and will benefit from the highest modifier to either of these schools. |
 | | 977718 | Primordial Fury | 0 | 0 | 977719 | 0 | Triggered by 977717 (Primordial Fury) |
+| | 977719 | Primordial Fury | 0 | 0 | 0 | 0 | Triggered by 977718 (Primordial Fury) |
 | RE | 977722 | Controlled Storm | 977723 | 0 | 0 | 0 | Your Thunderstorm no longer knocks enemies back. It instead restores twice as much mana and infuses you with lightning, increasing your critical strike chance with Lightning Bolt and Chain Lightning by 15% for 10 seconds. |
 | | 977723 | Controlled Storm | 0 | 0 | 0 | 0 | Triggered by 977722 (Controlled Storm) |
 | RE | 977725 | Controlled Typhoon | 56446 | 0 | 0 | 0 | Your Typhoon no longer knocks enemies back. It instead knocks you back. |
 | | 56446 | Disengage | 0 | 0 | 0 | 0 | Triggered by 977725 (Controlled Typhoon) |
 | RE | 977727 | Crimson Champion | 0 | 977728 | 0 | 0 | Your Holy Shield ability is transformed into Holy Shield (Crimson Champion) which permanently increases your chance to block by 10% and deals Holy damage when blocking an attack. This damage can only occur once per second, and instead of consuming a charge of the buff it instead grants one. Three charges are consumed to empower your next ability:Shield Slam - Deals Holy damage to up to five nearby enemies.Avenger's Shield - Increases your block value by 15% and threat by 10% for 10 sec.Power Word: Shield - Reduces all damage taken by 50% for 3 seconds. |
+| RE | 977727 | Crimson Champion | 0 | 0 | 0 | 977730 | Your Holy Shield ability is transformed into Holy Shield (Crimson Champion) which permanently increases your chance to block by 10% and deals Holy damage when blocking an attack. This damage can only occur once per second, and instead of consuming a charge of the buff it instead grants one. Three charges are consumed to empower your next ability:Shield Slam - Deals Holy damage to up to five nearby enemies.Avenger's Shield - Increases your block value by 15% and threat by 10% for 10 sec.Power Word: Shield - Reduces all damage taken by 50% for 3 seconds. |
 | | 977728 | Crimson Champion charges | 0 | 0 | 0 | 0 | Triggered by 977727 (Crimson Champion) |
 | | 977730 | Holy Shield (Crimson Champion) | 0 | 0 | 0 | 0 | Taught by 977727 (Crimson Champion) |
 | RE | 977739 | Shroud of Concealment | 991784 | 0 | 0 | 0 | Your mastery of illusions allows you to stay in Stealth for an additional second after initiating a Mage spell cast. |
 | | 991784 | Stealth (Shroud of Concealment) | 0 | 0 | 0 | 0 | Triggered by 977739 (Shroud of Concealment) |
 | RE | 977745 | Harnessed Energy | 0 | 977747 | 977746 | 0 | Your Arcane Blast debuff now lasts for 10 seconds and gives 30% Arcane damage and 250% increased mana cost of Arcane Blast regardless of how many stacks you have. It is consumed one stack at a time instead of all at once. In addition, triggering Missile Barrage now grants two stacks, but can only trigger from Arcane Blast and Starfire. |
 | | 977747 | Harnessed Energy charge increase | 0 | 0 | 0 | 0 | Triggered by 977745 (Harnessed Energy) |
+| | 977746 | Arcane Blast | 0 | 0 | 936032 | 0 | Triggered by 977745 (Harnessed Energy) |
 | RE | 977751 | Temple Guardian | 977752 | 0 | 0 | 0 | Using Intervene a friendly target with Weakened Soul will remove the debuff from them and put it on you instead and reset the cooldown of your Intervene. This effect has a 15 second cooldown and does not work when your soul is weakened. In addition, Inner Fire now increases your block chance by 5%. |
 | | 977752 | Temple Guardian | 0 | 6788 | 977758 | 0 | Triggered by 977751 (Temple Guardian) |
+| | 6788 | Weakened Soul | 0 | 0 | 0 | 0 | Triggered by 977752 (Temple Guardian) |
+| | 977758 | Temple Guardian iCD | 0 | 6788 | 0 | 0 | Triggered by 977752 (Temple Guardian) |
 | RE | 977764 | Ice Lash | 0 | 977765 | 0 | 0 | Your Lava Lash is transformed into Ice Lash, dealing Frost damage and increasing the damage of your Frostbolt and Ice Lance based on your attack power. If cast while Fingers of Frost is active, Ice Lash is guaranteed to critically hit and restore your Fingers of Frost charges. |
+| RE | 977764 | Ice Lash | 0 | 0 | 0 | 860103 | Your Lava Lash is transformed into Ice Lash, dealing Frost damage and increasing the damage of your Frostbolt and Ice Lance based on your attack power. If cast while Fingers of Frost is active, Ice Lash is guaranteed to critically hit and restore your Fingers of Frost charges. |
 | | 977765 | Solid Ice | 0 | 0 | 977766 | 0 | Triggered by 977764 (Ice Lash) |
+| | 977766 | Ice Lash FoF recharge | 0 | 0 | 0 | 0 | Triggered by 977765 (Solid Ice) |
 | | 860103 | Ice Lash | 0 | 0 | 0 | 0 | Taught by 977764 (Ice Lash) |
 | RE | 977771 | Ambidextrous | 977774 | 0 | 0 | 0 | Your Single-Minded Fury off-hand attacks have a 50% chance to trigger an instant attack with your main-hand weapon and increase your attack power by 10% for 6 seconds.Your Bloodthirst and Execute and Rend casts have a chance to trigger an instant attack with your off-hand weapon and increase your off-hand damage by 40% for 6 seconds. These effects have separate internal cooldowns lasting 12 seconds and cannot occur simultaneously. |
 | | 977774 | Dominant Strike | 0 | 977772 | 0 | 0 | Triggered by 977771 (Ambidextrous) |
+| | 977772 | Dominant | 0 | 0 | 0 | 0 | Triggered by 977774 (Dominant Strike) |
 | RE | 977777 | Sunder Soul | 0 | 0 | 0 | 887386 | Replaces your Sunder Armor with Sunder Soul, a Shadow melee attack that deals 70% of your weapon damage and increases your spell critical strike chance against the target by 3%, stacking up to 5 times. If an enemy dies with 5 stacks of Sunder Soul you gain a Soul Shard. |
 | | 887386 | Sunder Soul | 0 | 0 | 887387 | 0 | Taught by 977777 (Sunder Soul) |
 | | 887387 | Sundered Soul | 0 | 0 | 0 | 0 | Triggered by taught 887386 (Sunder Soul) |
@@ -612,11 +666,14 @@ This includes spells triggered from:
 | RE | 977787 | Fancy Footwork | 0 | 0 | 0 | 881966 | Teaches you an upgraded version of Feint which works as a finishing move. Feint (Fancy Footwork) lowers your threat on nearby targets by 2% per combo point, increases your physical damage dealt by 1% per combo point and reduces the damage you take from area of effect attacks by 3% per combo point. This effect lasts 10 seconds. This ability does not trigger a global cooldown, and is only useable if your Primary Stat is Agility or Strength. |
 | | 881966 | Feint (Fancy Footwork) | 0 | 881967 | 881968 | 0 | Taught by 977787 (Fancy Footwork) |
 | | 881967 | Fancy Footwork | 0 | 0 | 0 | 0 | Triggered by taught 881966 (Feint (Fancy Footwork)) |
+| | 881968 | Fancy Footwork | 0 | 0 | 0 | 0 | Triggered by taught 881966 (Feint (Fancy Footwork)) |
 | RE | 977802 | Predator's Wrath | 977803 | 0 | 0 | 0 | Your Predatory Strikes effect now lets you cast Wrath without leaving Cat Form. Wraths cast this way are unable to miss or crit, restore 30 energy and 15% of your base mana, and gives you Predator's Wrath. Predator's Wrath causes all your Cat Form abilities to deal additional Nature damage, this effect lasts for 6 seconds. |
 | | 977803 | Predator's Wrath | 0 | 0 | 977791 | 0 | Triggered by 977802 (Predator's Wrath) |
+| | 977791 | Predator's Wrath | 0 | 0 | 0 | 0 | Triggered by 977803 (Predator's Wrath) |
 | RE | 977810 | Fury of the Titans | 0 | 0 | 0 | 977813 | Your maximum rage is increased to 300. You learn Titanic Strike, a finishing move that strikes with both of your weapons. When used at full rage, Titanic Strike makes you go into a Titanic Fury, increasing your physical damage dealt with all attacks by 20% (5% against players), removing all rage costs and making your auto-attacks generate Combo Points for 15 seconds. When this effect ends, your rage is lost. Requires Titan's Grip. |
 | | 977813 | Titanic Strike | 0 | 977812 | 977815 | 0 | Taught by 977810 (Fury of the Titans) |
 | | 977812 | Titanic Strike (Off Hand) | 0 | 977811 | 0 | 0 | Triggered by taught 977813 (Titanic Strike) |
+| | 977815 | Titanic Strike Dummy Visual Timer | 977814 | 0 | 0 | 0 | Triggered by taught 977813 (Titanic Strike) |
 | RE | 977817 | Razor Claws | 977818 | 0 | 0 | 0 | Your Claw ability costs 10 less energy and now extends the duration of your Rake by 6 seconds and Rip by 2 seconds. Using it also sharpens your claws, increasing your physical damage by 2% and the damage of your next Rip by 5%. This effect stacks up to 3 times, and is consumed when you cast Rip. |
 | | 977818 | Razor Claws | 0 | 0 | 0 | 0 | Triggered by 977817 (Razor Claws) |
 | RE | 977824 | Twilight Paragon | 977825 | 0 | 0 | 0 | Dealing damage with Smite and Holy Fire grants you Paragon of Light, increasing your critical strike chance by 1%, stacking up to 10 times. But darkness lurks within...Casting Exorcism reveals your true form, consuming the stacks to inflict massive Twilight damage and making you a Paragon of Darkness for 1 second per stack consumed. While active your Mind Flay is empowered and deals additional Twilight damage.Twilight damage is a combination of the Shadow and Holy schools, and will benefit from the highest modifier to either school. |
@@ -630,6 +687,7 @@ This includes spells triggered from:
 | | 977858 | Deadly Combo | 52437 | 0 | 0 | 0 | Triggered by 977856 (Deadly Combo) |
 | RE | 977859 | Mindburn | 965738 | 0 | 0 | 0 | Your Shadowburn deals 25% more damage, and now triggers Darkness on hit. This effect requires the final rank of Darkness. |
 | | 965738 | Darkness | 0 | 0 | 965739 | 0 | Triggered by 977859 (Mindburn) |
+| | 965739 | Darkness | 0 | 0 | 0 | 0 | Triggered by 965738 (Darkness) |
 | RE | 978708 | Bright Lights | 0 | 31834 | 0 | 0 | Your Light's Grace talent now also triggers from Holy Fire and increases spell haste and Holy damage by 3% while active. Requires rank 3 of the Light's Grace talent. |
 | | 31834 | Light's Grace | 0 | 0 | 0 | 0 | Triggered by 978708 (Bright Lights) |
 | RE | 978709 | Master of Arms | 978710 | 0 | 0 | 0 | Consuming your Strength of Arms buff will increase your Armor Penetration rating by 10% of your Strength for 12 seconds. |
@@ -640,12 +698,14 @@ This includes spells triggered from:
 | | 978714 | Good Fortune | 978715 | 0 | 0 | 0 | Triggered by 978713 (Good Fortune) |
 | RE | 978716 | Munitions Expert | 978717 | 978718 | 0 | 0 | Your guns now use armor-piercing rounds, dealing 15% more physical damage but increasing the time between shots by 30%. Your bows and crossbows now fire quick-draw arrows, firing 30% faster but dealing 15% less physical damage. |
 | | 978717 | Armor-piercing Rounds | 0 | 0 | 0 | 0 | Triggered by 978716 (Munitions Expert) |
+| | 978718 | Quick-draw Arrows | 0 | 0 | 0 | 0 | Triggered by 978716 (Munitions Expert) |
 | RE | 978721 | Undaunted | 978722 | 0 | 0 | 0 | Casting Victory Rush while Stagger is active reduces the cooldown of your Last Stand by 40 seconds. Activating Last Stand removes Stagger, but its health bonus is reduced to 10% and duration reduced to 10 seconds. |
 | | 978722 | Undaunted | 0 | 0 | 0 | 0 | Triggered by 978721 (Undaunted) |
 | RE | 978724 | Bulwark | 0 | 0 | 0 | 922565 | Your Shield Block is replaced with an improved, channeled version. While active, you will Shield Slam nearby enemies every second and the damage reduction effect of your Critical Block is increased by 8%. Channeling reduces your movement speed by 50% and drains more and more energy. When your energy is depleted, the effect ends and cannot be recast until your energy is restored. |
 | | 922565 | Shield Block - Bulwark | 0 | 0 | 923922 | 0 | Taught by 978724 (Bulwark) |
 | | 923922 | Bulwark | 0 | 0 | 0 | 0 | Triggered by taught 922565 (Shield Block - Bulwark) |
 | RE | 978727 | Unchained | 0 | 978730 | 0 | 0 | Reduces the cooldown of your Blink spell by 5 seconds and makes it bind nearby enemies to the matter around them, preventing them from moving for 3 seconds. You also learn an alternate way of Blinking by harnessing the Arcane to propel you through space. You are only able to do this while casting an Arcane spell and it shares a cooldown with your normal Blink, but will not interrupt your spell cast. |
+| RE | 978727 | Unchained | 0 | 0 | 0 | 978728 | Reduces the cooldown of your Blink spell by 5 seconds and makes it bind nearby enemies to the matter around them, preventing them from moving for 3 seconds. You also learn an alternate way of Blinking by harnessing the Arcane to propel you through space. You are only able to do this while casting an Arcane spell and it shares a cooldown with your normal Blink, but will not interrupt your spell cast. |
 | | 978730 | Unchained Blink hidden aura | 0 | 0 | 0 | 0 | Triggered by 978727 (Unchained) |
 | | 978728 | Unchained Blink | 0 | 0 | 0 | 0 | Taught by 978727 (Unchained) |
 | RE | 978738 | Waking Nightmare | 978739 | 0 | 0 | 0 | When the target of your Haunt is healed, phantoms manifest to torment the mind of the healer. Tormented enemies take 10% increased Shadow damage and become vulnerable to Fear effects, making them last 50% longer. |
@@ -654,6 +714,7 @@ This includes spells triggered from:
 | | 978743 | Sinister Strike (Double Down) | 0 | 0 | 0 | 0 | Triggered by 978742 (Double Down) |
 | RE | 978744 | Tides of Battle | 978746 | 0 | 0 | 0 | When used above 90% energy, your Sinister Strikes increases your physical damage by 2% but drains 3% of your energy per second for 5 seconds. When used below 90% energy, your Sinister Strikes increase your energy regeneration by 10% but reduce your attack speed by 3% for 5 seconds. Both these effects stack up to 5 times, but can not be active at the same time. |
 | | 978746 | Ebb | 0 | 0 | 978748 | 0 | Triggered by 978744 (Tides of Battle) |
+| | 978748 | Ebb | 0 | 0 | 0 | 0 | Triggered by 978746 (Ebb) |
 | RE | 978749 | Inescapable Roots | 978750 | 0 | 0 | 0 | Your Entangling Roots prevent the target from using any spell or ability that would break them. This lasts for half the duration of the root. However, your Entangling Roots break easier from damage. |
 | | 978750 | Inescapable Roots | 0 | 0 | 0 | 0 | Triggered by 978749 (Inescapable Roots) |
 | RE | 978755 | Languish | 978756 | 0 | 0 | 0 | Your Curse of Exhaustion and Curse of Weakness now make the target languish, losing 10% of their maximum energy and rage every 3 seconds.This effect only works against players. |
@@ -669,6 +730,7 @@ This includes spells triggered from:
 | RE | 979736 | Foul Play | 965663 | 0 | 0 | 0 | Your Kidney Shot has now Silences the target for up to 3 seconds or until your Kidney Shot expires, whichever comes first. |
 | | 965663 | Improved Kidney Shot - Silence | 0 | 0 | 0 | 0 | Triggered by 979736 (Foul Play) |
 | RE | 979740 | Compound Power | 0 | 34071 | 0 | 0 | Your successful Steady Shots and Arcane Shots now award a combo point, and Slice and Dice now also increases your Ranged Attack Speed. If you know Aimed Shot, you will now also learn Compound Shot, which consumes your combo points to fire an empowered Aimed Shot. This ability scales with your Aimed Shot ability, and also shares a cooldown with it. |
+| RE | 979740 | Compound Power | 0 | 0 | 0 | 826679 | Your successful Steady Shots and Arcane Shots now award a combo point, and Slice and Dice now also increases your Ranged Attack Speed. If you know Aimed Shot, you will now also learn Compound Shot, which consumes your combo points to fire an empowered Aimed Shot. This ability scales with your Aimed Shot ability, and also shares a cooldown with it. |
 | | 34071 | Combo Point | 0 | 0 | 0 | 0 | Triggered by 979740 (Compound Power) |
 | | 826679 | Compound Shot | 0 | 0 | 0 | 0 | Taught by 979740 (Compound Power) |
 | RE | 979741 | The Bad Shepherd | 411148 | 0 | 0 | 0 | Polymorph now removes all periodic damage effects on the target. Breaking Polymorph with a direct damage Mage spell stuns the target for 2 seconds. |
@@ -683,16 +745,24 @@ This includes spells triggered from:
 | | 979752 | Rush of Blood | 0 | 0 | 0 | 0 | Triggered by 979751 (Rush of Blood) |
 | RE | 979753 | Ace up your Sleeve | 979754 | 979754 | 0 | 0 | When your Gouge gets dodged or parried, it only triggers half its cooldown. |
 | | 979754 | Gouge cooldown | 0 | 0 | 0 | 0 | Triggered by 979753 (Ace up your Sleeve) |
+| | 979754 | Gouge cooldown | 0 | 0 | 0 | 0 | Triggered by 979753 (Ace up your Sleeve) |
 | RE | 979756 | A Honest Mistake | 979757 | 0 | 0 | 0 | After one of your spells misses you gain 5% increased spell hit chance and 5% spell haste for 10s. |
 | | 979757 | A Honest Mistake | 0 | 0 | 0 | 0 | Triggered by 979756 (A Honest Mistake) |
 | RE | 979758 | Centered | 979759 | 0 | 0 | 0 | Your Holy healing spells increase the hit chance and damage done of your Smite, Holy Fire, and Penance by 2% for 10 seconds. This effect stacks up to 5 times. |
 | | 979759 | Centered | 0 | 0 | 0 | 0 | Triggered by 979758 (Centered) |
 | RE | 979763 | Shatter | 979764 | 0 | 0 | 0 | Your Mage spells cast immediately following a Frostbolt deal 10% increased damage and have their critical strike damage bonus increased by 25%. This effect only works for spells cast before your Frostbolt hits the target. |
 | | 979764 | Shatter | 0 | 414025 | 10060 | 0 | Triggered by 979763 (Shatter) |
+| | 414025 | Shatter Trigger Spell | 0 | 0 | 10060 | 0 | Triggered by 979764 (Shatter) |
+| | 10060 | Power Infusion | 0 | 0 | 0 | 0 | Triggered by 979764 (Shatter) |
+| | 10060 | Power Infusion | 0 | 0 | 0 | 0 | Triggered by 414025 (Shatter Trigger Spell) |
 | RE | 979768 | Here Comes The Big One | 414000 | 414001 | 0 | 0 | Every fourth use of Bloodthirst will be doubled in damage.Here...Comes...The...Big...One! |
 | | 414000 | Here Comes The Big One | 0 | 0 | 0 | 0 | Triggered by 979768 (Here Comes The Big One) |
+| | 414001 | The Big One | 0 | 0 | 0 | 0 | Triggered by 979768 (Here Comes The Big One) |
 | RE | 979769 | Zephyr | 414003 | 414004 | 414012 | 0 | Dealing damage with Windfury inspires you with the Wrath of Al'Akir, increasing your attack speed 1% and increasing your chance to trigger Windfury by 2% per stack. This effect stacks up to 10 times and lasts for 15 seconds. When reaching 10 stacks, your next Windfury will consume the stacks and trigger two extra attacks. |
 | | 414003 | Wrath of Al'Akir | 0 | 0 | 0 | 0 | Triggered by 979769 (Zephyr) |
+| | 414004 | Windfury (Zephyr) | 0 | 0 | 414003 | 0 | Triggered by 979769 (Zephyr) |
+| | 414012 | Zephyr 13 stack proc effect to remove stacks. | 414002 | 0 | 0 | 0 | Triggered by 979769 (Zephyr) |
+| | 414003 | Wrath of Al'Akir | 0 | 0 | 0 | 0 | Triggered by 414004 (Windfury (Zephyr)) |
 | RE | 979775 | Molten Mind | 0 | 0 | 0 | 978700 | Replaces your Molten Armor with Molten Mind increasing the damage or healing of your spell criticals by 5% and and reducing the threat from your spell criticals, but increasing the mana cost of your spells by 5%. This can not be used together with other bar-changing abilities such as Stances or Forms. |
 | | 978700 | Molten Mind | 0 | 38329 | 0 | 0 | Taught by 979775 (Molten Mind) |
 | | 38329 | Threat Reduction | 0 | 0 | 0 | 0 | Triggered by taught 978700 (Molten Mind) |
@@ -704,10 +774,13 @@ This includes spells triggered from:
 | | 979787 | Fetch Me Their Bones! CDR | 0 | 0 | 0 | 0 | Triggered by 979786 (Fetch Me Their Bones!) |
 | RE | 979792 | Channeled Rage | 979794 | 979794 | 0 | 0 | Your melee criticals reduce the cooldown of Shamanistic Rage by 3 seconds and your spell criticals extend its duration by 3 seconds. However, your Shamanistic Rage no longer reduces damage taken and only regenerates mana equal to 5% of your attack power. |
 | | 979794 | Shamanistic Rage Cooldown Reduction CDR | 0 | 0 | 0 | 0 | Triggered by 979792 (Channeled Rage) |
+| | 979794 | Shamanistic Rage Cooldown Reduction CDR | 0 | 0 | 0 | 0 | Triggered by 979792 (Channeled Rage) |
 | RE | 979796 | Prophet of Wrath | 0 | 0 | 979790 | 0 | Your Arcane Blast and Arcane Missiles increase the duration of Divine Illumination by 0.5 seconds each time they damage an enemy. Your Smite and Holy Fire spells reduce the cooldown of Divine Illumination by 5 seconds.While Divine Illumination is active, Arcane Blast and Arcane Missiles are infused with Holy power, causing them to deal Divine damage.Divine damage is a combination of the Arcane and Holy schools, and will benefit from the highest modifier to either school. |
 | | 979790 | Divine Illumination Duration Increase | 0 | 0 | 0 | 0 | Triggered by 979796 (Prophet of Wrath) |
 | RE | 980046 | Master of Shadows | 980048 | 980051 | 0 | 0 | Your Sinister Strike, Eviscerate, Garrote, and Rupture now deal extra Shadow damage, scaling with your spell damage. Your Sinister Strike criticals grant you Apprentice of Shadows, increasing your spell haste by 8% and your Shadow spell damage by 20% of your Agility for 8 sec, stacking up to 3 times. When fully stacked, your Eviscerate or Rupture consume Apprentice of Shadows to increase your Shadow spell damage by 60% of your Agility and increase your Shadow damage done and your Shadow spell critical strike chance by 10% for 10 sec. |
 | | 980048 | Apprentice of Shadows | 0 | 980049 | 0 | 0 | Triggered by 980046 (Master of Shadows) |
+| | 980051 | Master of Shadows Haste Counter | 0 | 0 | 0 | 0 | Triggered by 980046 (Master of Shadows) |
+| | 980049 | Master of Shadows | 0 | 0 | 0 | 0 | Triggered by 980048 (Apprentice of Shadows) |
 | RE | 982097 | Not on Holy Ground | 414013 | 0 | 0 | 0 | Increases the damage of your Corruption by 7% against targets afflicted by your Consecration. |
 | | 414013 | Not on Holy Grounds Warlock Damage Mask | 0 | 0 | 0 | 0 | Triggered by 982097 (Not on Holy Ground) |
 | RE | 982132 | Corrupted Wounds | 414014 | 0 | 0 | 0 | Increases the damage of your Corruption and Shadow Bolt by $s1% against targets afflicted by your Rupture. |
